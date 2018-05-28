@@ -20,6 +20,10 @@
 		justify-content: flex-start;
 		-ms-align-items: center;
 		align-items: center;
+
+		@media(max-width: @screen-md) and (min-width: @screen-sm) {
+			justify-content: space-between;
+		}
 	}
 
 	&--fixed {

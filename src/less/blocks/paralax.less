@@ -1,0 +1,59 @@
+// Для импорта в диспетчер подключений: @import './src/less/blocks/paralax.less';
+
+
+.paralax {
+	background-color: @yellow-color;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+
+	@media(max-width: @screen-md) and (min-width: @screen-sm) {
+		width: 120%;
+		height: 120%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		background-image: url('/img/mobile_bgr.png');
+		background-position: bottom;
+		-webkit-background-size: 90%;
+		background-size: 90%;
+		background-repeat: no-repeat;
+	}
+
+	&__layer {
+		width: 120%;
+		height: 120%;
+		background-repeat: no-repeat;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		@media(max-width: @screen-md) and (min-width: @screen-sm) {
+			display: none;
+		}
+	}
+
+	&__layer-1 {
+		background-image: url('/img/city2.png');
+		-ms-background-position: -5% 60%;
+		background-position: -5% 60%;
+	}
+	&__layer-2 {
+		background-image: url('/img/city1.png');
+		-ms-background-position: 0% 70%;
+		background-position: 0% 70%;
+		-webkit-background-size: 50%;
+		background-size: 50%;
+	}
+	&__layer-3 {
+		background-image: url('/img/red_man.png');
+		-ms-background-position: 100% 50%;
+		background-position: 100% 50%;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+
+}

@@ -17,9 +17,22 @@
 	margin-left: 10%;
 
 	@media(max-width: @screen-md) and (min-width: @screen-sm) {
-		margin-left: 5%;
+		position: absolute;
+		height: 100vh;
 		display: none;
+		top: 0;
+		right: 0;
+		background-color: @dark-gray-color;
+		padding: 80px 10px;
+		// transition: 0.3s;
 	}
+	@media(max-width: @screen-md) and (min-width: @screen-sm) {
+		&--active {
+			right: 0;
+		}
+	}
+
+
 	&__item {
 		list-style-type: none;
 	}
@@ -29,9 +42,13 @@
 		text-decoration: none;
 		line-height: 2.084;
 		margin-right: 60px;
+		display: inline-block;
 
 		@media(max-width: @screen-md) and (min-width: @screen-sm) {
 			margin-right: 28px;
+		}
+		@media(max-width: @screen-md) and (min-width: @screen-sm) {
+			padding: 10px 0;
 		}
 	}
 }

@@ -1,0 +1,42 @@
+// Для импорта в диспетчер подключений: @import './src/less/blocks/burger.less';
+
+
+.burger {
+	display: inline-block;
+	width: 50px;
+	height: 6px;
+	border-radius: 3px;
+	background-color: #fff;
+	margin: 12px 0;
+	position: relative;
+	&:before {
+		content: '';
+		display: inline-block;
+		width: 50px;
+		height: 6px;
+		border-radius: 3px;
+		background-color: #fff;
+		position: absolute;
+		top: -12px;
+		left: 0;
+	}
+	&:after {
+		content: '';
+		display: inline-block;
+		width: 50px;
+		height: 6px;
+		border-radius: 3px;
+		background-color: #fff;
+		position: absolute;
+		bottom: -12px;
+		left: 0;
+	}
+	&__wrapper {
+		padding: 10px;
+		display: none;
+		cursor: pointer;
+		@media(max-width: @screen-md) and (min-width: @screen-sm) {
+			display: block;
+		}
+	}
+}
