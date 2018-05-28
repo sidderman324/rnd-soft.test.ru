@@ -17,9 +17,14 @@ $(document).ready(function(){
 
 	jQuery('.burger__wrapper').on('click',function(){
 		jQuery('.main-menu').slideToggle(300);
+		jQuery('.burger').toggleClass('burger--active');
 	});
+
 	jQuery('.main-menu__link').on('click',function(){
-		jQuery('.main-menu').slideToggle(300);
+		var windowsWidth = jQuery(window).width();
+		if (windowsWidth < 768) {
+			jQuery('.main-menu').slideToggle(300);
+		}		
 	});
 
 	function menuHideShow() {

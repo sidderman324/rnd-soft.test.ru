@@ -1,0 +1,46 @@
+// Для импорта в диспетчер подключений: @import './src/less/blocks/bird.less';
+
+
+.bird {
+	position: absolute;
+	display: inline-block;
+	width: 50px;
+	height: 80px;
+	z-index: 9999;
+	background-repeat: no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+
+	&__1 {
+		background-image: url('/img/bird_1.png');
+		top: 10%;
+		left: 5%;
+		animation: move 5s linear infinite;
+	}
+	&__2 {
+		background-image: url('/img/bird_2.png');
+		top: 8%;
+		left: 43%;
+		animation: move 6s ease-in reverse infinite;
+	}
+	&__3 {
+		background-image: url('/img/bird_2.png');
+		top: 35%;
+		left: 5%;
+		animation: move 10s ease infinite;
+	}
+}
+@keyframes move {
+	0% {
+		transform: translate(0%,0%) rotate(0deg);
+	}
+	25% {
+		transform: translate(-5%,-5%) rotate(12deg);
+	}
+	50% {
+		transform: translate(-5%,0%) rotate(12deg);
+	}
+	100% {
+		transform: translate(0%,0%) rotate(0deg);
+	}
+}
