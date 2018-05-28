@@ -2,5 +2,85 @@
 
 
 .feedback {
-  
+	background-color: @yellow-color;
+	padding: 190px 0 150px 0;
+	height: 100vh;
+
+	&__title {
+		font-size: 70px;
+		color: @black-color;
+		font-weight: bold;
+		line-height: 0.992;
+		text-align: center;
+		margin-bottom: 35px;
+	}
+	&__text {
+		font-size: 24px;
+		color: @black-color;
+		line-height: 1.2;
+		text-align: center;
+		width: 25%;
+		margin: 0 auto;
+		margin-bottom: 35px;
+	}
+	&__form {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-direction: row;
+		-moz-flex-direction: row;
+		-ms-flex-direction: row;
+		-o-flex-direction: row;
+		flex-direction: row;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 75%;
+		margin: 0 auto;
+	}
+	&__input {
+		border-style: solid;
+		border-width: 1px;
+		border-color: @black-color;
+		border-radius: 10px;
+		background-color: transparent;
+		font-size: 24px;
+		color: @black-color;
+		line-height: 59px;
+		text-align: left;
+		flex-basis: 48%;
+		height: 60px;
+		padding-left: 20px;
+		margin: 10px;
+		margin-bottom: 30px;
+		outline: none;
+	}
+	/* стили для webkit */
+	&__input::-webkit-input-placeholder {
+		color: @black-color;
+	}
+	/* стили для mozilla */
+	&__input:-moz-placeholder {
+		color: @black-color;
+	}
+	&__submit {
+		border-radius: 10px;
+		background-color: @dark-gray-color;
+		display: inline-block;
+		height: 60px;
+		font-size: 30px;
+		color: #fff;
+		font-weight: bold;
+		line-height: 59px;
+		padding: 0 15%;
+		text-decoration: none;
+		text-align: center;
+		border: 0;
+		flex-basis: 50%;
+	}
 }

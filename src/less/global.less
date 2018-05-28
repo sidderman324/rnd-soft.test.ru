@@ -17,7 +17,6 @@ body {
   width: 100%;
   max-width: 100%;
   overflow: hidden;
-  font-size: 16px;
   position: relative;
   font-family: 'Rubik', sans-serif;
   transition: 0.3s;
@@ -40,7 +39,8 @@ body {
     min-width: @screen-sm;
   }
   @media(min-width: @screen-md) {
-    width: @screen-md;
+    min-width: @screen-md;
+    width: 90vw;
   }
   @media(min-width: @screen-lg) {
     width: @screen-lg;

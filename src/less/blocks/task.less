@@ -2,5 +2,65 @@
 
 
 .task {
-  
+	background-color: @dark-gray-color;
+	padding: 230px 0 200px 0;
+	background-image: url('/img/big_bgr.png');
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	height: 100vh;
+
+	&__list {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-direction: row;
+		-moz-flex-direction: row;
+		-ms-flex-direction: row;
+		-o-flex-direction: row;
+		flex-direction: row;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+		justify-content: center;
+		-ms-align-items: flex-start;
+		align-items: flex-start;
+		width: 50%;
+		margin: 0 auto;
+		padding-top: 100px;
+	}
+	&__item {
+		flex-basis: 50%;
+		list-style-type: none;
+		padding: 0 20px;
+		padding-bottom: 50px;
+
+		&:last-of-type {
+			padding-bottom: 0;
+		}
+	}
+
+	&__title {
+		font-size: 70px;
+		color: #fff;
+		font-weight: bold;
+		line-height: 0.992;
+		text-align: center;
+	}
+	&__number {
+		font-size: 96px;
+		color: @yellow-color;
+		font-weight: bold;
+		line-height: 0.992;
+		text-align: center;
+	}
+	&__text {
+		font-size: 24px;
+		color: #fff;
+		line-height: 1.2;
+		text-align: center;
+	}
 }

@@ -1,0 +1,30 @@
+// Для импорта в диспетчер подключений: @import './src/less/blocks/main-menu.less';
+
+
+.main-menu {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	-ms-align-items: baseline;
+	align-items: baseline;
+	margin-left: 10%;
+
+	&__item {
+		list-style-type: none;
+	}
+
+	&__link {
+		color: rgb(255, 255, 255);
+		font-weight: bold;
+		text-decoration: none;
+		line-height: 2.084;
+		margin-right: 60px;
+	}
+}

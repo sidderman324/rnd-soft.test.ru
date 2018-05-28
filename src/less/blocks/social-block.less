@@ -1,0 +1,39 @@
+// Для импорта в диспетчер подключений: @import './src/less/blocks/social-block.less';
+
+
+.social-block {
+
+	&__text {
+		font-size: 18px;
+		color: #2b2b2b;
+		font-weight: bold;
+		line-height: 1.2;
+		text-align: left;
+	}
+	&__item {
+		margin-right: 25px;
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		-webkit-background-size: contain;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+
+		&--vk {
+			background-image: url('/img/icon_vk.png');
+		}
+		&--fb {
+			background-image: url('/img/icon_fb.png');
+		}
+		&--ok {
+			background-image: url('/img/icon_ok.png');
+		}
+		&--insta {
+			background-image: url('/img/icon_insta.png');
+		}
+		&--youtube {
+			background-image: url('/img/icon_youtube.png');
+		}
+	}
+}
