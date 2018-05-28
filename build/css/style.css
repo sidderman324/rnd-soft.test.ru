@@ -488,7 +488,7 @@ body {
   overflow: hidden;
 }
 .promo__box {
-  margin-left: 5%;
+  margin-left: 10%;
 }
 .promo__title {
   font-size: 97px;
@@ -502,7 +502,7 @@ body {
   color: #2b2b2b;
   line-height: 1.2;
   text-align: left;
-  width: 55%;
+  width: 50%;
   margin-bottom: 50px;
 }
 .promo__btn {
@@ -1061,6 +1061,9 @@ body {
   .paralax__layer {
     display: none;
   }
+  .bird {
+    display: none;
+  }
 }
 @media (min-width: 768px) {
   .container {
@@ -1154,6 +1157,10 @@ body {
     margin-right: 15px;
     width: 32px;
     height: 32px;
+  }
+  .bird__3 {
+    left: 0%;
+    top: 60%;
   }
 }
 @media (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.2) {

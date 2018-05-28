@@ -11,6 +11,10 @@
 	-webkit-background-size: contain;
 	background-size: contain;
 
+	@media(max-width: @screen-md) and (min-width: @screen-sm) {
+		display: none;
+	}
+
 	&__1 {
 		background-image: url('/img/bird_1.png');
 		top: 10%;
@@ -28,6 +32,10 @@
 		top: 35%;
 		left: 5%;
 		animation: move 10s ease infinite;
+		@media(max-width: @screen-lg) and (min-width: @screen-md) {
+			left: 0%;
+			top: 60%;	
+		}
 	}
 }
 @keyframes move {
