@@ -8,6 +8,9 @@
 			<li class="main-menu__item"><a href="#two" class="main-menu__link">Твоя миссия</a></li>
 			<li class="main-menu__item"><a href="#three" class="main-menu__link">Стань верстальщиком RND</a></li>
 		</nav>
+		<div class="burger__wrapper">
+			<div class="burger"></div>
+		</div>
 	</div>
 </header>
 

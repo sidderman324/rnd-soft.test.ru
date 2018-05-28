@@ -2,6 +2,15 @@
 
 
 .social-block {
+	@media(max-width: @screen-lg) and (min-width: @screen-md) {
+		display: block;
+		width: 100%;
+		margin-top: 20px;
+	}
+	@media(max-width: @screen-md) and (min-width: @screen-sm) {
+		margin-top: 20px;
+		margin-left: 70px;
+	}
 
 	&__text {
 		font-size: 18px;
@@ -9,6 +18,13 @@
 		font-weight: bold;
 		line-height: 1.2;
 		text-align: left;
+		margin-bottom: 10px;
+		@media(max-width: @screen-lg) and (min-width: @screen-md) {
+			font-size: 14px;
+		}
+		@media(max-width: @screen-md) and (min-width: @screen-sm) {
+			font-size: 12px;
+		}
 	}
 	&__item {
 		margin-right: 25px;
@@ -19,6 +35,17 @@
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position: center;
+
+		@media(max-width: @screen-lg) and (min-width: @screen-md) {
+			margin-right: 15px;
+			width: 32px;
+			height: 32px;
+		}
+		@media(max-width: @screen-md) and (min-width: @screen-sm) {
+			margin-right: 10px;
+			width: 30px;
+			height: 30px;
+		}
 
 		&--vk {
 			background-image: url('/img/icon_vk.png');

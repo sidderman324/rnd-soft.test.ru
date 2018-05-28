@@ -7,7 +7,13 @@
 	background-image: url('/img/big_bgr.png');
 	background-repeat: no-repeat;
 	background-position: bottom center;
-	height: 100vh;
+
+	@media(max-width: @screen-lg) and (min-width: @screen-md) {
+		padding-top: 100px;
+	}
+	@media(max-width: @screen-md) and (min-width: @screen-sm) {
+		padding: 80px 0;
+	}
 
 	&__list {
 		display: -webkit-flex;
@@ -31,6 +37,15 @@
 		width: 50%;
 		margin: 0 auto;
 		padding-top: 100px;
+
+		@media(max-width: @screen-lg) and (min-width: @screen-md) {
+			width: 100%;
+			padding-top: 50px;
+		}
+		@media(max-width: @screen-md) and (min-width: @screen-sm) {
+			padding-top: 30px;
+			width: 100%;
+		}
 	}
 	&__item {
 		flex-basis: 50%;
@@ -41,14 +56,23 @@
 		&:last-of-type {
 			padding-bottom: 0;
 		}
+		@media(max-width: @screen-md) and (min-width: @screen-sm) {
+			flex-basis: 100%;
+		}
 	}
 
 	&__title {
 		font-size: 70px;
 		color: #fff;
 		font-weight: bold;
-		line-height: 0.992;
+		line-height: 1;
 		text-align: center;
+		@media(max-width: @screen-lg) and (min-width: @screen-md) {
+			font-size: 44px;
+		}
+		@media(max-width: @screen-md) and (min-width: @screen-sm) {
+			font-size: 38px;
+		}
 	}
 	&__number {
 		font-size: 96px;
@@ -56,11 +80,23 @@
 		font-weight: bold;
 		line-height: 0.992;
 		text-align: center;
+		@media(max-width: @screen-lg) and (min-width: @screen-md) {
+			font-size: 58px;
+		}
+		@media(max-width: @screen-md) and (min-width: @screen-sm) {
+			font-size: 58px;
+		}
 	}
 	&__text {
 		font-size: 24px;
 		color: #fff;
 		line-height: 1.2;
 		text-align: center;
+		@media(max-width: @screen-lg) and (min-width: @screen-md) {
+			font-size: 14px;
+		}
+		@media(max-width: @screen-md) and (min-width: @screen-sm) {
+			font-size: 14px;
+		}
 	}
 }

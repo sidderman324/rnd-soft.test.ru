@@ -16,15 +16,22 @@
 	align-items: baseline;
 	margin-left: 10%;
 
+	@media(max-width: @screen-md) and (min-width: @screen-sm) {
+		margin-left: 5%;
+		display: none;
+	}
 	&__item {
 		list-style-type: none;
 	}
-
 	&__link {
 		color: rgb(255, 255, 255);
 		font-weight: bold;
 		text-decoration: none;
 		line-height: 2.084;
 		margin-right: 60px;
+
+		@media(max-width: @screen-md) and (min-width: @screen-sm) {
+			margin-right: 28px;
+		}
 	}
 }
